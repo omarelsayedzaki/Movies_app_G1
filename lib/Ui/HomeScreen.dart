@@ -38,6 +38,10 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     Image.asset("assets/images/Image.png"),
                     Positioned(
+                        top: 75,
+                        left: 165,
+                        child: Image.asset("assets/images/play-button-2.png")),
+                    Positioned(
                         top: 90,
                         child: Image.asset("assets/images/ImageSmall.png")),
                     Positioned(
