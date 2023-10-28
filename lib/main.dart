@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movies_g1_mon/Ui/HomeScreen.dart';
+import 'package:movies_g1_mon/Ui/Tabs/searchTab.dart';
 import 'package:movies_g1_mon/Ui/splashScreen.dart';
-
 import 'Ui/DetailsScreen.dart';
 
 void main() {
@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Movie App G1',
       theme: ThemeData(
         appBarTheme: AppBarTheme(color: Color(0xff1D1E1D)),
@@ -29,8 +30,9 @@ class MyApp extends StatelessWidget {
         DetailsScreen.routeName: (_) => DetailsScreen(),
         HomeScreen.routeName: (_) => HomeScreen(),
         SplashScreen.routeName: (_) => SplashScreen(),
+        searchTab.routeName: (_) => searchTab(),
       },
-      initialRoute: HomeScreen.routeName,
+      initialRoute: SplashScreen.routeName,
     );
   }
 }

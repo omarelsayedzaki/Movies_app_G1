@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movies_g1_mon/Ui/HomeScreen.dart';
 import 'package:movies_g1_mon/Ui/recomendrdWidget/recomendrdWidget.dart';
 
 class DetailsScreen extends StatelessWidget {
@@ -9,6 +10,15 @@ class DetailsScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Theme.of(context).primaryColor,
       appBar: AppBar(
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back_outlined,
+            color: Colors.white,
+          ),
+          onPressed: () {
+            Navigator.pushReplacementNamed(context, HomeScreen.routeName);
+          },
+        ),
         title: Center(
           child: Text(
             'movie name ',
