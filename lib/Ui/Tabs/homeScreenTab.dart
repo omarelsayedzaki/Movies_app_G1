@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../DetailsScreen.dart';
 import '../recomendrdWidget/recomendrdWidget.dart';
 
